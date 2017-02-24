@@ -1,7 +1,5 @@
 #!/bin/sh
-error=0
-warning=0
-if [ $error -eq 1 ] && [ $warning -eq 1 ]; then 
+if [ $error -eq 0 ] && [ $warning -eq 0 ]; then 
 	git checkout master
 	git merge develop
 	git push origin master
