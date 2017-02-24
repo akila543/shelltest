@@ -5,7 +5,7 @@ if [ $error -eq 0 ] && [ $warning -eq 0 ]; then
 	git merge master
 	git checkout master
 	git merge develop
-	git push origin develop
+	git push origin master
 else
 	echo "rejected"
 fi
